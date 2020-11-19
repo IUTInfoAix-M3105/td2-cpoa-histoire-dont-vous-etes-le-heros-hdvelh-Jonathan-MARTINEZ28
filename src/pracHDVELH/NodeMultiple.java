@@ -64,7 +64,13 @@ public class NodeMultiple {
 	 * @return all the daughters
 	 */
 	public NodeMultiple[] getDaughters() {
-		/* TO BE COMPLETED */
+		NodeMultiple[] allDaughters = new NodeMultiple[];
+		int i = 0;
+		while (i < NODE_MAX_ARITY){
+			allDaughters[i] = getDaughter(i);
+			i++;
+		}
+		return allDaughters;
 	}
 
 	/**
@@ -100,14 +106,14 @@ public class NodeMultiple {
 	 * @return the content data
 	 */
 	public Object getData() {
-		/* TO BE COMPLETED */
+		return data;
 	}
 
 	/**
 	 * @param data
 	 */
 	public void setData(Object data) {
-		/* TO BE COMPLETED */
+		this.data = data;
 	}
 
 	/**
